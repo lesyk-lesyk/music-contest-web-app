@@ -16,7 +16,7 @@
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
 
-<body>
+<body ng-controller="mainController">
 
   <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
@@ -40,7 +40,7 @@
             <span class="fa fa-mortar-board"></span>
             <span>Theory</span></a>
           </li>
-          <li><a href="#/tests">
+          <li ng-show="isAuthorised()"><a href="#/tests">
             <span class="fa fa-check-square-o"></span>
             <span>Tests</span></a>
           </li>
@@ -50,8 +50,10 @@
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#/register" id="registerLink">Register</span></a></li>
-          <li><a href="#/login" id="loginLink">Log in <span class="fa fa-sign-in"></a></li>
+          <li ng-hide="isAuthorised()"><a href="#/register">Register</span></a></li>
+          <li ng-hide="isAuthorised()"><a href="#/login">Login <span class="fa fa-sign-in"></a></li>
+          <li ng-show="isAuthorised()"><a href="#/settings">userName</a></li>
+          <li ng-show="isAuthorised()"><a href ng-click="logout()">Logout <span class="fa fa-sign-out"></a></li>
         </ul>
       </div>
     </div>
