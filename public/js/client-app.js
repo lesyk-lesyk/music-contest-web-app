@@ -15,6 +15,12 @@ mContest.config(function($routeProvider) {
   .when('/info', {
     templateUrl : 'partials/info.html',
   })
+  .when('/login', {
+    templateUrl : 'partials/login.html',
+  })
+  .when('/register', {
+    templateUrl : 'partials/register.html',
+  })
   .otherwise({
     templateUrl : 'partials/404.html',
   });
