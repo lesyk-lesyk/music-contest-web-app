@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html ng-app="mContest">
+<head>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="/">
+  <title>Music contest - clickable prototype</title>
+
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <!-- bootstrap-->
+  <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+  <!-- font-awesome-->
+  <link rel="stylesheet" type="text/css" href="/bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- app styles-->
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+
+<body>
+
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand brand-logo" href="#/">
+          <img src="/img/logo.png" height=35 width=35>
+        </a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#/">
+            <span class="fa fa-home"></span>
+            <span>Home</span></a>
+          </li>
+          <li><a href="#/theory">
+            <span class="fa fa-mortar-board"></span>
+            <span>Theory</span></a>
+          </li>
+          <li><a href="#/tests">
+            <span class="fa fa-check-square-o"></span>
+            <span>Tests</span></a>
+          </li>
+          <li><a href="#/info">
+            <span class="fa fa-info-circle"></span>
+            <span>Info</span></a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#/register" id="registerLink">Register</span></a></li>
+          <li><a href="#/login" id="loginLink">Log in <span class="fa fa-sign-in"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container body-content">
+    <div ng-view></div>
+  </div> <!-- /container -->
+
+
+  <div class="container body-content">
+    <hr />
+    <footer>
+      <p>&copy; 2016 - Music contest | FantasticFour production</p>
+    </footer>
+  </div> <!-- /container -->
+
+
+
+  <!-- jquery, bootstrap-->
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- angular and dependencies -->
+  <script src="/bower_components/angular/angular.min.js"></script>
+  <script src="/bower_components/angular-route/angular-route.min.js"></script>
+
+  <!-- client app -->
+  <script src="/js/client-app.js"></script>
+
+</body>
+</html>
