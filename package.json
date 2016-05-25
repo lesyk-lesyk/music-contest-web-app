@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "music contest for music school of Rudky",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "bower": "^1.7.9",
+    "express": "^4.13.4"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
