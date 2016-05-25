@@ -1,0 +1,26 @@
+{
+  "name": "music-contest",
+  "description": "music contest for music school of Rudky",
+  "main": "index.js",
+  "authors": [
+    "Oleksiy"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "js",
+    "angular"
+  ],
+  "homepage": "https://github.com/okachynskyy/musicContest",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "angular": "1.5.0",
+    "angular-route": "1.5.0"
+  }
+}
