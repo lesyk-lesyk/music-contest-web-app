@@ -1,0 +1,25 @@
+{
+  "name": "music-contest",
+  "version": "1.0.0",
+  "description": "music contest for music school of Rudky",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okachynskyy/musicContest.git"
+  },
+  "keywords": [
+    "js",
+    "angular"
+  ],
+  "author": "Oleksiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/okachynskyy/musicContest/issues"
+  },
+  "homepage": "https://github.com/okachynskyy/musicContest#readme"
+}
