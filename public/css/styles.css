@@ -446,3 +446,9 @@ footer a:hover, footer a:focus { border-bottom: 1px dotted #19b9e7; }
   height: 130px;
   margin-bottom: 10px;
 }
+
+.video-clip{
+  max-width: 640px;
+  max-height: 480px;
+  margin: auto;
+}
